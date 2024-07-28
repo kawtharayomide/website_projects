@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        montserrat: ["Montserrat"],
+        inter: ["Inter"],
+        poppins: ["Poppins"],
+        quicksand: ["Quicksand"],
+      }
+    },
   },
   plugins: [],
 }

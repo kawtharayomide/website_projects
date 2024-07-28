@@ -593,9 +593,9 @@ video {
   margin-right: auto;
 }
 
-.bg-\[\#19213D\] {
+.bg-\[\#0A0D17\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(25 33 61 / var(--tw-bg-opacity));
+  background-color: rgb(10 13 23 / var(--tw-bg-opacity));
 }
 
 .px-7 {
@@ -606,4 +606,9 @@ video {
 .py-7 {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
