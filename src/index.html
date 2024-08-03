@@ -5,34 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/styles/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap">
+    <link rel="stylesheet" href="../src/main.js">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <title>AI</title>
 </head>
 
 <div class="container mx-auto py-7 px-7">
 <body class="bg-gradient-to-r from-[#0A0D17] via-[#19213D] to-[#0A0D17]  ">
-    <div class="container flex justify-between">
+    <div class="container flex flex-col">
         <!-- <div class="container">
             <img class=" w-64 opacity-90 absolute-0 absolute top-0 hidden " src="../src/styles/assets/left side.png" alt="">
         </div> -->
-        <div class="container">
+        
           
-            <div class="nav-container  flex flex-row items-center justify-between  ">
+            <nav class="font-inter text-[38px] text-white font-extrabold mt flex flex-row justify-between place-items-center">
                 <p class="empty div"></p>
-                <nav class="font-inter text-[38px] text-white font-extrabold mt ">LOGO</nav>
-            <button class="hamburger justify-end">
-                <img class=" h-4.4 flex justify-end" src="../src/styles/assets/Union.png" alt="">
-            </button>
-            <div id="menu" class=" flex-row">
-                <a href="#" class="text-[12px] text-[#CDD4F0] font-inter hover:bg-gray-200 ">home</a>
-                <a href="#" class="text-[12px] text-[#CDD4F0] font-inter hover:bg-gray-200 ">About</a>
-                <a href="#" class="text-[12px] text-[#CDD4F0] font-inter hover:bg-gray-200 ">Services</a>
-                <a href="#" class="text-[12px] text-[#CDD4F0] font-inter hover:bg-gray-200 ">Contact</a>
+               <div class="font-inter text-[38px] text-white font-extrabold mt ">LOGO</div>
+              <!-- <div class=" flex justify-end">
+                  <img class="union h-4.4  " onclick="Menu(this)" src="../src/styles/assets/Union.png" alt="">
+              </div> -->
+              <ion-icon onclick="onToggleMenu(this)" name="Menu" class="text-3xl cursor-pointer"></ion-icon>
 
-            </div>
+              
+                <div class=" absolute min-h-[60px] left-0 top-[-100%] w-full bg-gray-200 flex items-center">
+                  <ul class="text-[12px] text-[#CDD4F0] font-inter hover:bg-gray-200 flex w-full w-auto transistion-all ease-in duration-500 flex-col z-auto">
+                  <li>
+                   <a href="#" class=" font-inter hover:text-[#CDD4F0] duration-500">Home</a>
+                  </li>
+                   <li>
+                       <a href="#" class=" font-inter hover:text-[#CDD4F0] duration-500">About</a>
+                   </li>
+                   <li>
+                       <a href="#" class=" font-inter hover:text-[#CDD4F0] duration-500">Services</a>
+                   </li>
+                   <li>
+                       <a href="#" class=" font-inter hover:text-[#CDD4F0] duration-500">Contact</a>
+                   </li>
+                  </ul>
+
+                </div> 
+            </nav>
+            
                
-                    
-            </div>
-            <div class="Hero flex flex-col place-items-center gap-6  ">
+            <div class="Hero flex flex-col place-items-center gap-8  ">
               <div class="text-container text-[32px] text-[#CDD4F0;] font-poppins font- text-center space-y-6 mt-9">
                   <h2>Characters</h5>
                   <h2>About us</h5>
@@ -42,7 +57,7 @@
                     <img class=" w-24  " src="../src/styles/assets/view cart.png" alt="">
                 </button>
                   <img src="../src/styles/assets/Line 1.png" alt="">
-                   <div class="icon flex flex-row gap-3 w-4 justify-center">
+                   <div class="icon flex flex-row gap-5 w-4 justify-center">
                     <img src="../src/styles/assets/Icon/instagram.png" alt="">
                     <img src="../src/styles/assets/Icon/twitter.png" alt="">
                     <img src="../src/styles/assets/Icon/facebook.png" alt="">
@@ -50,7 +65,7 @@
                    
             </div>
 
-                <footer class=" flex flex-col gap-2">
+                <footer class=" flex flex-col gap-3 mt-36">
                     <h5 class=" text-[12px] text-[#CDD4F0] font-inter  ">Download</h5>
                     <div class=" flex flex-col gap-2">
                         <button class=" border-[0.5px] rounded-md w-24 h-8 p-1">
